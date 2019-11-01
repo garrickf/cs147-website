@@ -5,12 +5,12 @@ const w1_slides = require("../assets/week1/slides.pdf");
 const w2_slides = require("../assets/week2/slides.pdf");
 const w3_slides = require("../assets/week3/slides.pdf");
 const w4_slides = require("../assets/week4/slides.pdf");
-const w5_slides = 's';
+const w5_slides = require("../assets/week5/slides.pdf");;
 
 const w2_report = require("../assets/week2/report.pdf");
 const w3_video = "https://youtu.be/ZqrLB-JMSMY";
 const w4_report = require("../assets/week4/report.pdf");
-const w5_readme = 's';
+const w5_readme = require("../assets/week5/readme.pdf");
 const w5_figma = 'https://www.figma.com/file/BvRzrnXRWqwSu9S4PM99Hl/sharewaves-med-fi?node-id=0%3A1';
 const w5_prototype = 'https://www.figma.com/proto/BvRzrnXRWqwSu9S4PM99Hl/sharewaves?node-id=29%3A35&scaling=min-zoom';
 
