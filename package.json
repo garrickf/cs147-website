@@ -1,11 +1,16 @@
 {
   "name": "sharewaves-web",
   "version": "0.1.0",
+  "homepage": "./",
   "private": true,
   "dependencies": {
+    "@rebass/preset": "^4.0.5",
+    "emotion-theming": "^10.0.19",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "rebass": "^4.0.7",
+    "typeface-dm-sans": "0.0.76"
   },
   "scripts": {
     "start": "react-scripts start",
