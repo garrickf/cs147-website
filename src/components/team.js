@@ -31,23 +31,25 @@ export default () => {
       backgroundColor="#555555"
       color='white'
       fontSize="5"
-      alignItems='center'
+      alignItems={['flex-start', 'flex-start', 'center']}
+      justifyContent={['center', 'center', 'flex-start']}
+      flexDirection={['column', 'column', 'row']}
       sx={{
-        height: "50vh",
+        height: ['150vh', '150vh', "100vh"],
       }}
     >
       <Box
-        mx={-4} 
+        mx={-4}
         sx={{
           position: 'absolute',
           width: '100vw',
-          height: "50vh",
+          height: ['150vh', '150vh', "100vh"],
           background: `url(${splash}) no-repeat right top`,
           backgroundSize: 'auto 50vh',
           mixBlendMode: 'color-burn',
         }}
       />
-      <Box width={4/5}>
+      <Box width={4/5} mb={5}>
         <Heading fontSize="6">
           Our team.
         </Heading>
@@ -58,23 +60,38 @@ export default () => {
       </Box>
 
       <Flex
+        flexDirection={['column', 'column', 'row']}
+        mb={5}
         sx={{
           zIndex: 1,
         }}
       >
         {team.map(member => (
-          <Box px={4}>
+          <Flex 
+            px={[0, 0, 4]}
+            mb={4}
+            alignItems='center'
+            flexDirection={['row', 'row', 'column']}
+          >
             <Image
+              pb={2}
               src={member.img}
               sx={{
-                width: [ "300px" ],
+                width: ["100px", "100px", "300px"],
                 borderRadius: 999,
                 filter: 'grayscale(100%)'
               }}
             />
-            <Text textAlign='center'>{member.name}</Text>
-            <Text textAlign='center' fontStyle='italic' fontSize='3'>{member.blurb}</Text>
-          </Box>
+            <Box
+              px={3}
+              sx={{
+                width: '200px',
+              }}
+            >
+              <Text textAlign='center'>{member.name}</Text>
+              <Text textAlign='center' fontStyle='italic' fontSize='3'>{member.blurb}</Text>
+            </Box>
+          </Flex>
         ))}
       </Flex>
     </Flex>

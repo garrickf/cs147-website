@@ -51,7 +51,7 @@ const cards = [
     writeup: null,
     other: [
       {
-        title: "Med Fi README",
+        title: "Readme",
         link: w5_readme
       },
       {
@@ -74,9 +74,6 @@ export default () => {
       flexDirection="column"
       justifyContent="center"
       fontSize="5"
-      sx={{
-        height: "100vh"
-      }}
     >
       <Box>
         <Heading fontSize="6" width={[1, 1, 1 / 3]}>
@@ -87,7 +84,7 @@ export default () => {
 
       <Flex flexWrap="wrap" mx={-2}>
         {cards.map(card => (
-          <Box width={1 / 3}>
+          <Box width={[1, 1/2, 1/3]}>
             <Card m={2} height={300} fontSize='4'>
               <Heading>{card.title}</Heading>
               {card.slides ? <Link href={card.slides} target='__blank' pr={2}>[Slides]</Link> : null}

@@ -9,7 +9,7 @@ export default () => {
       px={4}
       flexDirection='column'
       justifyContent='center'
-      fontSize='5'
+      fontSize={5}
       sx={{
         height: '100vh',
         background: `url(${splash}) no-repeat right top`,
@@ -17,7 +17,7 @@ export default () => {
       }}
     >
       <Box>
-        <Heading fontSize='6' width={[1, 1, 1 / 3]}>
+        <Heading fontSize={6} width={[1, 1, 1 / 3]}>
           See the change. Be the change.
         </Heading>
         <Text width={[1, 1, 3 / 5]}>

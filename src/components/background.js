@@ -1,6 +1,9 @@
 import React from "react";
 import { Flex, Text, Box, Heading } from "rebass";
 
+const gif1 = require('../assets/sharewave-1.gif')
+const gif2 = require('../assets/sharewave-2.gif')
+
 export default () => {
   return (
     <>
@@ -13,7 +16,10 @@ export default () => {
         backgroundColor="black"
         color="white"
         sx={{
-          height: "100vh"
+          height: "100vh",
+          background: `url(${gif1}) no-repeat calc(100vw - 494px) center`,
+          backgroundSize: 'auto 50vh',
+          backgroundAttachment: 'fixed',
         }}
       >
         <Box>
@@ -33,7 +39,10 @@ export default () => {
         justifyContent="center"
         fontSize="5"
         sx={{
-          height: "100vh"
+          height: "100vh",
+          background: `url(${gif2}) no-repeat calc(100vw - 600px) center`,
+          backgroundSize: 'auto 50vh',
+          backgroundAttachment: 'fixed',
         }}
       >
         <Box>
