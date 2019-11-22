@@ -17,7 +17,7 @@ export default () => {
         color="white"
         sx={{
           height: "100vh",
-          background: `url(${gif1}) no-repeat calc(100vw - 494px) center`,
+          // background: `url(${gif1}) no-repeat calc(100vw - 494px) center`,
           backgroundSize: 'auto 50vh',
           backgroundAttachment: 'fixed',
         }}

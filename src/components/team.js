@@ -9,17 +9,17 @@ const team = [
   {
     img: garrick,
     name: "Garrick F.",
-    blurb: "What is a blurb?"
+    blurb: "Needfinding/Code"
   },
   {
     img: gen,
     name: "Gen S.",
-    blurb: "What is a blurb?"
+    blurb: "Needfinding/Design"
   },
   {
     img: grace,
     name: "Grace W.",
-    blurb: "What is a blurb?"
+    blurb: "Design/Code"
   }
 ];
 
