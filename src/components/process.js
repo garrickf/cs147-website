@@ -26,6 +26,9 @@ const w7_he = require('../assets/week7/he.pdf');
 const w10_report = require("../assets/week10/report.pdf");
 const w10_readme = require("../assets/week10/readme.pdf");
 const w10_github = "https://github.com/garrickf/sharewaves";
+const w10_poster = require("../assets/week10/poster.pdf");
+const w10_pitch = require("../assets/week10/pitch.pdf");
+const w10_pitch_ppt = require("../assets/week10/pitch.pptx");
 
 const cards = [
   {
@@ -116,7 +119,19 @@ const cards = [
       {
         title: "Code (GitHub)",
         link: w10_github,
-      }
+      },
+      {
+        title: "Poster",
+        link: w10_poster,
+      },
+      {
+        title: "Pitch Slide (PDF)",
+        link: w10_pitch,
+      },
+      {
+        title: "Pitch Slide (PPT)",
+        link: w10_pitch_ppt,
+      },
     ]
   }
 ];
